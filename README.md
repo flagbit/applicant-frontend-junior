@@ -3,7 +3,9 @@
 ## Task
 
 Write a simple "widget" that uses JavaScript to request data from an external weather API,
-and visualize them inside the Browser. Do NOT use a framework or library for this!
+and visualize it inside the Browser. Do NOT use a framework or library for this!
+
+### Requirements
 
 1. Get the location of the user
 2. Get the weather data for the location of the user
