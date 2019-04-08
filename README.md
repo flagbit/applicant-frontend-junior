@@ -14,7 +14,7 @@ and visualize them inside the Browser. Do NOT use a framework or library for thi
    * current wind
 
 You don't have to take too much care about cross-browser testing. If its working in
-the latest versions of chrome and firefox everythign is fine :)
+the latest versions of chrome and firefox everything is fine :)
 
 ## Questions
 
