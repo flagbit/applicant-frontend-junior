@@ -65,7 +65,7 @@ function showWeather(response) {
   textWind.innerHTML = jsonObject.wind.speed + " km/h";
 
   //zum testen
-  jsonObject.weather[0].description = "clear sky";
+  //jsonObject.weather[0].description = "clear sky";
   //jsonObject.weather[0].description = "few clouds";
   //jsonObject.weather[0].description = "rain";
   //jsonObject.weather[0].description = "snow";

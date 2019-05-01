@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color:rgb(237, 123, 27);
+    background-color:white;
     font-family: "Nunito-SemiBold";
     overflow:hidden;
     margin: 0;
@@ -12,7 +12,6 @@ body{
 }
 .wrapper {
     width: 100%;
-    /* whatever width you want */
     display: inline-block;
     position: relative;
   }
@@ -41,7 +40,6 @@ body{
 #image-weather{
     height:56.25vw;
     max-height:100vh;
-
     position:absolute;
     right:0;
 }

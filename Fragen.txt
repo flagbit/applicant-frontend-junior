@@ -1,0 +1,31 @@
+How could you request data inside the browser, from another domain?
+
+Mit Cross-Origin-Requests
+
+
+What does CORS stand for?
+
+Cross-origin resource sharing
+
+
+Please name 5 different HTTP methods and explain what they are used for
+
+CONNECT: erstellt eine Verbindung zu einem Server
+GET: wird verwendet um Daten abzurufen
+POST: wird verwendet um Daten zu senden, z.B. die Daten eines Formulars
+OPTIONS: gibt alle Optionen und Features zurück, die der Server unterstützt
+DELETE:  hiermit können Daten auf dem Server gelöscht werden
+
+
+What is the difference between 'DOMContentLoaded' and 'Load' events?
+
+Load: 
+Events die warten bis eine Seite komplett geladen wurden
+
+DOMContentLoaded: 
+wartet bis das Dokument geladen wurde, ohne auf externe Stylesheets oder Bilder zu warten. 
+
+
+What is the DOM?
+
+Das ist der Code, den man in den Entwickler-Tools sieht, wenn man damit eine Website betrachtet. Es ist quasi der geparste HTML-Code, des Betreibers der Website.
