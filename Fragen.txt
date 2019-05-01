@@ -1,4 +1,4 @@
-How could you request data inside the browser, from another domain?
+﻿How could you request data inside the browser, from another domain?
 
 Mit Cross-Origin-Requests
 
@@ -28,4 +28,4 @@ wartet bis das Dokument geladen wurde, ohne auf externe Stylesheets oder Bilder 
 
 What is the DOM?
 
-Das ist der Code, den man in den Entwickler-Tools sieht, wenn man damit eine Website betrachtet. Es ist quasi der geparste HTML-Code, des Betreibers der Website.
+Der DOM, kurz für Document Object Model, ist eine API für HTML und XML und definiert die logische Struktur von diesen Dokumenten.
