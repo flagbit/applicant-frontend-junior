@@ -17,7 +17,8 @@ current cloudiness with an svg-icon representing this information (sun, sun & cl
 current wind.
 
 
-Screenshots
+## Screenshots
+
 ![Alt text](sample.png?raw=true )
 
 ### APIs / Libraries/References 
