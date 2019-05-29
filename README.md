@@ -1,13 +1,13 @@
 This is a Weather App that used Weather API .
 
 
-###Technologies Used :
+### Technologies Used :
 HTML 
 Javascript 
 CSS
 
 
-##Requirements
+### Requirements
 Get the location of the user
 Get the weather data for the location of the user
 Write a "widget" that is showing the following information
@@ -20,10 +20,10 @@ current wind.
 Screenshots
 
 
-APIs / Libraries/References 
+### APIs / Libraries/References 
 
--[Weather API](https://fcc-weather-api.glitch.me/)
--[Icons](https://erikflowers.github.io/weather-icons/)
--JSON
+- [Weather API](https://fcc-weather-api.glitch.me/)
+- [Icons](https://erikflowers.github.io/weather-icons/)
+- JSON
 
 
