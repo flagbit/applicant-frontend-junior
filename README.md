@@ -1,7 +1,7 @@
 This is a Weather App that used Weather API .
 
 
-Technologies Used :
+###Technologies Used :
 HTML 
 Javascript 
 CSS
