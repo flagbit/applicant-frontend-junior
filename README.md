@@ -7,7 +7,7 @@ Javascript
 CSS
 
 
-###Requirements
+##Requirements
 Get the location of the user
 Get the weather data for the location of the user
 Write a "widget" that is showing the following information
