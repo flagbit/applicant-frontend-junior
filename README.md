@@ -1,4 +1,4 @@
-This is a Weather App that used Weather API .
+This is a Weather App.
 
 
 ### Technologies Used :
