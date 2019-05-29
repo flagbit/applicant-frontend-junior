@@ -1,0 +1,44 @@
+#weatherTemp
+{	
+	float: left;
+}
+#weatherIcon
+{	
+	overflow;
+}
+#windIcon
+{
+	margin-top: 15;
+}
+
+#weatherPlace
+{
+position:relative;	
+}
+
+#description
+{
+	margin-top:15;
+}
+
+#weatherSpeed
+{
+	float:left;
+	 
+}
+ 
+
+.mainWindow {
+  color:#FFFAF0;
+  width: 150px;
+  background: #2a2827;
+  padding: 6px;
+  position: relative;
+  margin: 8 auto;
+  border-radius: 8px;
+  font-family: 'Helvetica Neue' ;
+}
+
+
+
+ 
