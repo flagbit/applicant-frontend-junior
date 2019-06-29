@@ -1,43 +1,30 @@
-# Junior Frontend Developer
+## Weather-Widget Aufgabe
 
-## Task
+Ich hoffe, FontAwesome geht nicht als Framework/Library durch, habe mich aber bewusst gegen die "mitgelieferten" Icons (`weather[0].icon`) entschieden, da es ein SVG-Icon sein soll. Außerdem sind diese nicht ganz so schön ;)  
 
-Write a simple "widget" that uses JavaScript to request data from an external
-weather API, and visualize it inside the Browser.
+Für die Liste der möglichen Icons habe ich mich an [https://openweathermap.org/weather-conditions](https://openweathermap.org/weather-conditions) orientiert, falls das zu Problemen führen sollte, bitte ich das zu entschuldigen, meine Absicht mit dem switch/case ist denke ich mal klar geworden, außerdem ist der Default-Case die Sonne, da kann man sich denke ich nicht beschweren :D  
 
-For ease of use, we suggest to use this public API, as it doesn't need an app
-registration (no key needed):
+Ansonsten habe ich die Darstellung minimal gehalten, soll ja auch noch simpel bleiben. Nicht optimal sind auf jeden Fall die vielen Requests, die FontAwesome neuerdings abfeuert, bis das gewünschte Icon gefunden ist. Hier könnte man natürlich auch seine eigene IconFont bereit stellen.
+Entwickelt und getestet unter Windows 10, Firefox 67.0.4 auf Desktop (Widget ist nicht für mobile optimiert).
 
-[Weather API](https://fcc-weather-api.glitch.me/)
+## Fragen
 
-...but if you want to use anything else, please feel free to do so! :)
+**How could you request data inside the browser, from another domain?**
+ Via a (not always that simple) cross domain request or a websocket connection.
 
-But please do **NOT** use a framework or library for the implementation of any
-part of this task!
+**What does CORS stand for?**
+Cross Origin Resource Sharing, which is disabled by default.
 
-### FYI:
+**Please name 5 different HTTP methods and explain what they are used for.**
+ - GET - used to get a resource, can deliver visible parameters via the URL
+ - POST - this gets also a resource but parameters are delivered within the request body so they are not visible to everyone
+ - DELETE - delets a resource, mainly used for deleting database entries
+ - PUT - replaces an existing resource, mainly used for changing database entries
+ -  PATCH - updates an existing resource, mainly used for updating existing database entries
 
-Of course we are using frameworks and libraries here at flagbit... many of them.
-But this task is about getting to know **YOU**, how you are coding and what your
-personal opinion or solution for specific technical questions/problems is.
+**What is the difference between 'DOMContentLoaded' and 'Load' events?**
+DOMContentLoaded -> DOM is ready
+Load -> whole page (with 'final' content) is ready
 
-### Requirements
-
-1. Get the location of the user
-2. Get the weather data for the location of the user
-3. Write a "widget" that is showing the following information
-   - Weather Location
-   - current temperature
-   - current cloudiness with an svg-icon representing this information (sun, sun & clouds, rain and so on)
-   - current wind
-
-You don't have to take too much care about cross-browser testing. If its working in
-the latest versions of chrome and firefox everything is fine :)
-
-## Questions
-
-- How could you request data inside the browser, from another domain?
-- What does CORS stand for?
-- Please name 5 different HTTP methods and explain what they are used for.
-- What is the difference between 'DOMContentLoaded' and 'Load' events?
-- What is the DOM?
+**What is the DOM?**
+Document Object Model, tree-like structure which represents the HTML elements, can be manipulated via JavaScript

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherWidget</title>
+    <script src="https://kit.fontawesome.com/b446b085cb.js"></script>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="spinner-wrapper">
+        <div id="spinner"></div>
+        <p>Please wait while the location data is being loaded.</p>
+        <p class="small">Make sure you are connected to the internet, JavaScript is enabled and grant the permission to get your location.</p>
+    </div>
+    <div id="widget" class="hidden">
+        <h1>Weather</h1>
+        <p class="small"><span id="city">Karlsruhe</span>, <span id="country">DE</span></p>
+        <div id="info">
+            <div class="info-field">
+                <p id="temp-current">13,4 °C</p>
+                <p class="small">Min: <span id="temp-min">12,5 °C</span> | Max: <span id="temp-max">14,4 °C</span></p>
+                <p class="info-desc">Temperature</p>
+            </div>
+            <div class="info-field">
+                <p><i id="cloud-img" class="fas"></i></p>
+                <p id="cloud-text" class="small"></p>
+                <p class="info-desc">Cloudiness</p>
+            </div>
+            <div class="info-field">
+                <p id="wind-speed">5,3 m/s</p>
+                <p class="small">At <span id="wind-degree"></span> degrees</p>
+                <p class="info-desc">Current Wind</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

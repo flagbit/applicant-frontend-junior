@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#spinner-wrapper {
+    text-align: center;
+}
+
+#spinner {
+    margin: 0 auto 20px auto;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#widget {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0 0 -5px 0;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+#info {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info-field {
+    margin: 0 -30px;
+    padding: 10px 30px;
+    display: block;
+}
+
+.info-field:not(:last-child) {
+    border-bottom: 2px solid black;
+}
+
+.info-field:last-child {
+    margin-bottom: -20px;
+}
+
+.info-field>p:first-child {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.info-field>p:nth-child(2) {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.info-desc {
+    margin-top: 5px;
+}
+
+#cloud-img {
+    font-size: 2em;
+    line-height: 1.3em;
+}
