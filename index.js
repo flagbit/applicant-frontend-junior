@@ -1,28 +1,28 @@
 function userLocation() {
   var location = document.getElementById("location");
 
-  var url = "https://fcc-weather-api.glitch.me/api/current?";
+  var url =
+    "https://fcc-weather-api.glitch.me/api/current?lon=:longitude&lat=:latitude";
 
   navigator.geolocation.getCurrentPosition(success, error);
 
   function success(position) {
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
 
-    location.innerHTML =
-      "Latitude is " + latitude + "° Longitude is " + longitude + "°";
+    location.innerHTML = "Latitude is " + lat + "° Longitude is " + lon + "°";
 
-    fetch(url + "lat=" + latitude + "&lon=" + longitude)
+    fetch(
+      "https://fcc-weather-api.glitch.me/api/current?lon=" + lon + "&lat=" + lat
+    )
       .then(function(response) {
         return response.json();
       })
       .then(function(data) {
         console.log(JSON.stringify(data));
-        document.getElementById("root").innerHTML = data.coord.lon;
-        return data;
       })
       .catch(function(error) {
-        console.error("error");
+        console.error(error);
       });
   }
 
@@ -30,7 +30,7 @@ function userLocation() {
     location.innerHTML = "Unable to retrieve your location";
   }
 
-  location.innerHTML = "Locating...";
+  location.innerHTML = "Loading your location...";
 }
 
 userLocation();
