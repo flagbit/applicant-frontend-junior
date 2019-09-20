@@ -31,6 +31,9 @@ function userLocation() {
       })
       .catch(function(error) {
         console.log("Fetch Error", error);
+        if (response.status === 429) {
+          alert("Error 429: Too many requests");
+        }
       });
     /*
       .then(function(response) {
@@ -73,6 +76,6 @@ function WeatherInfo(data) {
 
   weatherIcon.src = weather[0].icon;
   city.innerHTML = data.name;
-  temperature.innerHTML = data.main.temp;
-  wind.innerHTML = data.wind.speed;
+  temperature.innerHTML = "Temperature: " + data.main.temp + " °C";
+  wind.innerHTML = "Wind speed: " + data.wind.speed;
 }

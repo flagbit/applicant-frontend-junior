@@ -3,8 +3,9 @@
   width: 100vw;
   position: relative;
   margin-left: -50vw;
-  height: 50px;
+  height: 80px;
   margin-top: 50px;
+  margin-bottom: 50px;
   left: 50%;
 }
 body {
@@ -14,12 +15,19 @@ body {
   background-color: #cccccc;
 }
 
+.title {
+  text-align: center;
+  font-family: monospace;
+  font-size: 50px;
+  padding-top: 10px;
+}
+
 h1 {
   text-align: center;
   font-family: monospace;
   font-size: 36px;
-  padding-top: 5px;
 }
+
 h2 {
   text-align: center;
   font-family: monospace;
