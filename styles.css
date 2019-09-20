@@ -18,6 +18,7 @@ h1 {
   text-align: center;
   font-family: monospace;
   font-size: 36px;
+  padding-top: 5px;
 }
 h2 {
   text-align: center;
@@ -29,5 +30,8 @@ p {
   font-family: monospace;
 }
 img {
-  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
 }
