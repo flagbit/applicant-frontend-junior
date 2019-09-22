@@ -1,0 +1,44 @@
+.header {
+  background-image: url("background.jpg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: -5vw;
+  height: 200px;
+  margin-bottom: 50px;
+  left: 50%;
+}
+
+.title {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+  padding-top: 70px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+.box {
+  margin: auto;
+  width: 70%;
+  border: 0.5px solid rgb(182, 181, 181);
+  box-shadow: 10px 10px 15px rgb(220, 219, 219);
+}

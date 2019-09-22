@@ -37,7 +37,28 @@ the latest versions of chrome and firefox everything is fine :)
 ## Questions
 
 - How could you request data inside the browser, from another domain?
+
+  - In this example the JavaScript `fetch()` method was used to access the given weather API, which provides the data visualized inside the browser. An API enables one piece of software to interact with another within a set of rules.
+
 - What does CORS stand for?
+
+  - CORS stands for Cross-Origin Resource Sharing. It enables web applications running at one origin to access certain resources from another origin.
+
 - Please name 5 different HTTP methods and explain what they are used for.
+
+  - GET - retrieves data from a specified resource
+  - POST - submits data to the resource
+  - PUT - updates / modifies the resource by replacing it
+  - PATCH - updates / modifies a part of the resource
+  - DELETE - deletes the resource specified
+
 - What is the difference between 'DOMContentLoaded' and 'Load' events?
+
+  - The DOMContentLoaded event is triggered when the loading of the document is completed and the DOM is created (not including images & stylesheets for example). Load events trigger when the page is completely loaded.
+
 - What is the DOM?
+  - DOM stands for Document Object Model and is a representation of the structure of a document as a logical tree. It allows scripts / programming languages to access the objects contained in each node of the tree's branches.
+
+## Please note:
+
+There might be a problem with the API used. It occasionally returns the weather information for Shuzenji (Japan) although given different location coordinates. In case this happens, please try to reload the page.
