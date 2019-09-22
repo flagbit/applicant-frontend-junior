@@ -58,3 +58,7 @@ the latest versions of chrome and firefox everything is fine :)
 
 - What is the DOM?
   - DOM stands for Document Object Model and is a representation of the structure of a document as a logical tree. It allows scripts / programming languages to access the objects contained in each node of the tree's branches.
+
+## Please note:
+
+There might be a problem with the API used. It occasionally returns the weather information for Shuzenji (Japan) although given different location coordinates. In case this happens, please try to reload the page.
