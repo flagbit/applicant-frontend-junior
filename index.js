@@ -7,7 +7,7 @@ function userLocation() {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
 
-    location.innerHTML = "Latitude:" + lat + "° Longitude:" + lon + "°";
+    location.innerHTML = "Latitude: " + lat + "°   Longitude: " + lon + "°";
 
     fetch(
       "https://fcc-weather-api.glitch.me/api/current?lon=" +
@@ -54,7 +54,8 @@ function userLocation() {
   }
 
   function error() {
-    location.innerHTML = "Unable to retrieve your location";
+    location.innerHTML =
+      "Unable to retrieve your location, <br/> please ensure location access is allowed.";
   }
 
   location.innerHTML = "Loading your location...";
@@ -76,6 +77,6 @@ function WeatherInfo(data) {
 
   weatherIcon.src = weather[0].icon;
   city.innerHTML = data.name;
-  temperature.innerHTML = "Temperature: " + data.main.temp + " °C";
-  wind.innerHTML = "Wind speed: " + data.wind.speed;
+  temperature.innerHTML = "Temperature: <b>" + data.main.temp + "°C</b>";
+  wind.innerHTML = "Wind speed: <b>" + data.wind.speed + "</b>";
 }
