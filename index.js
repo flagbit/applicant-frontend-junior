@@ -19,6 +19,10 @@ function userLocation() {
       { method: "GET" }
     )
       .then(function(response) {
+        // Frequent error
+        if (response.status === 429) {
+          alert("Error 429: Too many requests");
+        }
         if (response.status !== 200) {
           console.log(
             "Looks like there was a problem. Status Code: " + response.status
@@ -33,10 +37,6 @@ function userLocation() {
       })
       .catch(function(error) {
         console.log("Fetch Error", error);
-        // Frequent error
-        if (response.status === 429) {
-          alert("Error 429: Too many requests");
-        }
       });
   }
 
