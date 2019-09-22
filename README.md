@@ -54,7 +54,7 @@ the latest versions of chrome and firefox everything is fine :)
 
 - What is the difference between 'DOMContentLoaded' and 'Load' events?
 
-  - The DOMContentLoaded event is triggered when the loading of the document is completed (not including images & stylesheets for example). Load events wait until the page is completely loaded.
+  - The DOMContentLoaded event is triggered when the loading of the document is completed and the DOM is created (not including images & stylesheets for example). Load events trigger when the page is completely loaded.
 
 - What is the DOM?
   - DOM stands for Document Object Model and is a representation of the structure of a document as a logical tree. It allows scripts / programming languages to access the objects contained in each node of the tree's branches.

@@ -19,10 +19,6 @@ function userLocation() {
       { method: "GET" }
     )
       .then(function(response) {
-        // Frequent error
-        if (response.status === 429) {
-          alert("Error 429: Too many requests");
-        }
         if (response.status !== 200) {
           console.log(
             "Looks like there was a problem. Status Code: " + response.status
@@ -35,8 +31,9 @@ function userLocation() {
           WeatherInfo(data);
         });
       })
-      .catch(function(error) {
-        console.log("Fetch Error", error);
+      .catch(function(err) {
+        //console.log("Fetch Error", err);
+        alert(err.message + ". Check for Error 429");
       });
   }
 
@@ -65,8 +62,11 @@ function WeatherInfo(data) {
   console.log(data.name);
   */
 
-  weatherIcon.src = weather[0].icon;
   city.innerHTML = data.name;
   temperature.innerHTML = "Temperature: <b>" + data.main.temp + "°C</b>";
   wind.innerHTML = "Wind speed: <b>" + data.wind.speed + "</b>";
+
+  if (weather[0].icon) {
+    weatherIcon.src = weather[0].icon;
+  } else weatherIcon.src = "questionmark.png";
 }
